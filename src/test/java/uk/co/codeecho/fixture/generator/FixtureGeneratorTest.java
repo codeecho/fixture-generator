@@ -35,20 +35,16 @@ public class FixtureGeneratorTest {
 
     @Test
     public void testGetFixtures() {
-        System.out.println("getFixtures");
         FixtureGenerator<String> fixtureGenerator = new FixtureGenerator();
         List<String> teams = new LinkedList<String>();
         teams.add("Team 1");
         teams.add("Team 2");
         teams.add("Team 3");
         teams.add("Team 4");
-//        teams.add("Team 5");
-//        teams.add("Team 6");
-//        teams.add("Team 7");
-//        teams.add("Team 8");
         List<List<Fixture<String>>> rounds = fixtureGenerator.getFixtures(teams, true);
-        for(List<Fixture<String>> round: rounds){
-            System.out.println("==========================");
+        for(int i=0; i<rounds.size(); i++){
+            System.out.println("Round " + (i+1));
+            List<Fixture<String>> round = rounds.get(i);
             for(Fixture<String> fixture: round){
                 System.out.println(fixture.getHomeTeam() + " vs " + fixture.getAwayTeam());
             }
