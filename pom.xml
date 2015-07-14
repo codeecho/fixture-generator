@@ -54,12 +54,12 @@
         <repository>
             <id>codeecho-s3-release-repo</id>
             <name>AWS Release Repository</name>
-            <url>s3://codeecho-maven-repository/releases</url>
+            <url>s3://maven.codeecho.co.uk/releases</url>
         </repository>
         <snapshotRepository>
             <id>codeecho-s3-snapshot-repo</id>
             <name>AWS Snapshot Repository</name>
-            <url>s3://codeecho-maven-repository/snapshots</url>
+            <url>s3://maven.codeecho.co.uk/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
 
